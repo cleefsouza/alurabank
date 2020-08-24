@@ -27,4 +27,4 @@
 Aryosvalldo Cleef ─ [linkedin](https://www.linkedin.com/in/aryosvalldo-cleef/) ─ [@cleefsouza](https://github.com/cleefsouza)
 
 ### Meta <div id="meta"></div>
-Made with :green_blue: by **Cleef Souza**
+Made with :blue_heart: by **Cleef Souza**
