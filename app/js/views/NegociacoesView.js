@@ -1,14 +1,8 @@
 // app/ts/views/NegociacoesView.ts
-class NegociacoesView {
+class NegociacoesView extends View {
     /**
-     * @param selector
+     * @param model
      */
-    constructor(selector) {
-        this._element = document.querySelector(selector);
-    }
-    update(model) {
-        this._element.innerHTML = this.template(model);
-    }
     template(model) {
         return `
         <table class="table table-hover table-bordered">
