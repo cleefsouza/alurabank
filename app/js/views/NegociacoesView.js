@@ -9,7 +9,7 @@ class NegociacoesView {
     update(model) {
         this._element.innerHTML = this.template(model);
     }
-    template(modelo) {
+    template(model) {
         return `
         <table class="table table-hover table-bordered">
             <thead>
@@ -22,7 +22,7 @@ class NegociacoesView {
             </thead>
 
             <tbody>
-                ${modelo.getArray().map(negociacao => `
+                ${model.getArray().map(negociacao => `
                     <tr>
                         <td>${negociacao.data.getDate()}/${negociacao.data.getMonth() + 1}/${negociacao.data.getFullYear()}</td>
                         <td>${negociacao.quantidade}</td>

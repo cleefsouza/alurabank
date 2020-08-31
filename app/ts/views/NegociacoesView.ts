@@ -15,7 +15,7 @@ class NegociacoesView {
         this._element.innerHTML = this.template(model);
     }
 
-    template(modelo: Negociacoes): string {
+    template(model: Negociacoes): string {
         return `
         <table class="table table-hover table-bordered">
             <thead>
@@ -28,7 +28,7 @@ class NegociacoesView {
             </thead>
 
             <tbody>
-                ${modelo.getArray().map(negociacao => `
+                ${model.getArray().map(negociacao => `
                     <tr>
                         <td>${negociacao.data.getDate()}/${negociacao.data.getMonth()+1}/${negociacao.data.getFullYear()}</td>
                         <td>${negociacao.quantidade}</td>
