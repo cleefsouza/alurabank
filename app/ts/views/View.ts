@@ -1,27 +1,25 @@
 // app/ts/view/View.ts
 
-class View<T> {
+abstract class View<T> {
 
-    protected _elemento: Element;
+    protected _elemento: JQuery;
 
     /**
      * @param seletor 
      */
     constructor(seletor: string) {
-        this._elemento = document.querySelector(seletor);
+        this._elemento = $(seletor);
     }
 
     /**
      * @param model 
      */
     update(model: T): void {
-        this._elemento.innerHTML = this.template(model);
+        this._elemento.html(this.template(model));
     }
 
     /**
      * @param model 
      */
-    template(model: T): string {
-        throw new Error("Implementar o método template.");
-    }
+    abstract template(model: T): string;
 }
